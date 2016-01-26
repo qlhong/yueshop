@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar_list_search" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/shelfCatList"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.33"
+            android:background="@color/bg_gray"
+            android:divider="@color/common_listview_item_divide"
+            android:dividerHeight="0.5dip"
+            android:scrollbars="none" />
+
+        <GridView
+            android:id="@+id/shelfDetailList"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.67"
+            android:background="@color/white"
+            android:numColumns="3"
+            android:verticalSpacing="5.0dip" />
+    </LinearLayout>
+
+</LinearLayout>
